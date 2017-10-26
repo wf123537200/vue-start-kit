@@ -1,24 +1,28 @@
 <template>
-  <el-tabs v-model="activeName">
-    <el-tab-pane label="目录" name="menu">
-      <Menu></Menu>
-    </el-tab-pane>
-    <el-tab-pane label="i18n" name="i18n">
-      <I18n></I18n>
-    </el-tab-pane>
-    <el-tab-pane label="ajax和mock" name="ajaxAndMock">
-      <AjaxAndMock></AjaxAndMock>
-    </el-tab-pane>
-    <el-tab-pane label="校验" name="valid">
-      <Valid></Valid>
-    </el-tab-pane>
-    <el-tab-pane label="异常处理" name="error">
-      <Error></Error>
-    </el-tab-pane>
-    <el-tab-pane label="路由配置" name="router">
-      <Router></Router>
-    </el-tab-pane>
-  </el-tabs>
+  <div>
+    <el-tabs v-model="activeName">
+      <el-tab-pane label="目录" name="menu">
+        <Menu></Menu>
+      </el-tab-pane>
+      <el-tab-pane label="i18n" name="i18n">
+        <I18n></I18n>
+      </el-tab-pane>
+      <el-tab-pane label="ajax和mock" name="ajaxAndMock">
+        <AjaxAndMock></AjaxAndMock>
+      </el-tab-pane>
+      <el-tab-pane label="校验" name="valid">
+        <Valid></Valid>
+      </el-tab-pane>
+      <el-tab-pane label="异常处理" name="error">
+        <Error></Error>
+      </el-tab-pane>
+      <el-tab-pane label="路由配置" name="router">
+        <Router></Router>
+      </el-tab-pane>
+    </el-tabs>
+
+    <div class="scss-text">scss-测试</div>
+  </div>
 </template>
 
 <script>
@@ -48,6 +52,10 @@
   };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+  @import "./style/index.scss";
 
+  .scss-text {
+    background: red;
+  }
 </style>

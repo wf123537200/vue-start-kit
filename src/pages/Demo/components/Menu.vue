@@ -15,6 +15,7 @@
       │   ├── pages                   // 页面目录
       │   │   ├── Demo                // demo页面，必须用大写开头
       │   │   │   ├── components      // 页面专用组件
+      │   │   │   ├── style           // 页面专用sass
       │   │   │   ├── services        // 页面服务，可以包含相应方法类
       │   │   │   ├── interface.js    // 页面接口结合文件
       │   │   │   └── index.vue       // 页面入口
@@ -25,6 +26,7 @@
       │   ├── config.js               // 项目配置文件
       │   ├── interface.js            // 项目接口文件
       │   └── main.js                 // Webpack 预编译入口
+      ├── style                       // 项目公用style
       ├── static                      // 静态文件目录，保留
       │   └── i18n                    // 国际化目录，每一个目录为一种语言
       │       ├── zh                  // 中文目录
